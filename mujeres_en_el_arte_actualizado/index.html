@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Parisienne&display=swap" rel="stylesheet">
+<title>Mujeres en la Historia del Arte | ODS 5</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="hero" id="inicio">
+  <nav class="nav">
+    <div class="logo">Mujeres en la Historia del Arte</div>
+    <div>
+      <a href="#artistas">Artistas</a>
+      <a href="#linea-tiempo">Línea del tiempo</a>
+      <a href="#ods">Agenda 2030</a>
+      <a href="#laboratorio">Laboratorio</a>
+      <a href="#referencias">Referencias</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <span class="kicker">Arte plástico · ODS 5</span>
+    <h1>Sus obras también cambiaron la historia.</h1>
+    <p>Una galería educativa para conocer a mujeres artistas, recuperar sus aportaciones y reflexionar sobre la igualdad de género desde las artes plásticas.</p>
+    <div class="cta">
+      <a class="btn primary" href="#artistas">Explorar artistas</a>
+      <a class="btn secondary" href="#ods">¿Por qué ODS 5?</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="container" id="ods">
+  <h2 class="section-title">Arte + Agenda 2030</h2>
+  <p class="section-sub">La aplicación toma como eje el ODS 5: lograr la igualdad de género y empoderar a todas las mujeres y niñas. También conecta con educación, reducción de desigualdades y sociedades inclusivas.</p>
+  <div class="ods-grid">
+    <article class="ods"><div class="num">05</div><h3>Igualdad de género</h3><p>Visibilizar creadoras y cuestionar estereotipos en la historia del arte.</p></article>
+    <article class="ods"><div class="num">04</div><h3>Educación de calidad</h3><p>Aprender historia del arte mediante perfiles, preguntas y recursos interactivos.</p></article>
+    <article class="ods"><div class="num">10</div><h3>Reducción de desigualdades</h3><p>Dar espacio a narrativas y trayectorias que fueron menos visibles en los relatos tradicionales.</p></article>
+    <article class="ods"><div class="num">16</div><h3>Sociedades inclusivas</h3><p>Promover respeto, participación, libertad de expresión y reconocimiento cultural.</p></article>
+  </div>
+</section>
+
+<section class="container" id="artistas">
+  <h2 class="section-title">Galería de creadoras</h2>
+  <p class="section-sub">Busca por nombre, movimiento o región. Las imágenes y colores de cada ficha cambian para relacionarse visualmente con la artista y su corriente.</p><p class="visual-note">Cada ficha tiene una paleta y una ilustración original inspirada en recursos visuales asociados con la artista o su corriente.</p>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="🔎 Buscar artista, movimiento o palabra clave...">
+    <select id="movement">
+      <option value="">Todos los movimientos</option>
+      <option>Barroco</option><option>Impresionismo</option><option>Modernismo</option>
+      <option>Surrealismo</option><option>Expresionismo abstracto</option><option>Arte contemporáneo</option>
+      <option>Arte feminista</option><option>Realismo</option>
+    </select>
+    <select id="region">
+      <option value="">Todas las regiones</option>
+      <option>Europa</option><option>América Latina</option><option>América del Norte</option><option>Asia</option><option>África</option><option>Medio Oriente</option><option>Oceanía</option>
+    </select>
+  </div>
+  <div class="art-grid" id="gallery"></div>
+</section>
+
+<section class="container" id="linea-tiempo">
+  <h2 class="section-title">Línea del tiempo</h2>
+  <p class="section-sub">Una selección de momentos para entender cómo las mujeres han participado en las artes visuales.</p>
+  <div class="timeline">
+    <div class="event"><h3>1593–1654 · Artemisia Gentileschi</h3><p>Una de las figuras más destacadas del barroco italiano; alcanzó reconocimiento profesional en un contexto artístico dominado por hombres.</p></div>
+    <div class="event"><h3>1841–1895 · Berthe Morisot</h3><p>Figura central del impresionismo; participó en exposiciones impresionistas y desarrolló una obra propia sobre vida moderna y espacios íntimos.</p></div>
+    <div class="event"><h3>1887–1986 · Georgia O'Keeffe</h3><p>Construyó una trayectoria decisiva en el arte moderno estadounidense con pinturas de flores, paisajes y formas abstractas.</p></div>
+    <div class="event"><h3>1907–1954 · Frida Kahlo</h3><p>Su obra autobiográfica exploró identidad, cuerpo, dolor, cultura y experiencia personal, convirtiéndose en una referencia internacional.</p></div>
+    <div class="event"><h3>1917–2011 · Leonora Carrington</h3><p>Artista y escritora vinculada al surrealismo; desarrolló un lenguaje propio de seres fantásticos, mitología e imaginación.</p></div>
+    <div class="event"><h3>1945– · Yayoi Kusama</h3><p>Su práctica interdisciplinaria utiliza repetición, puntos, instalaciones y espacios inmersivos para explorar percepción, identidad e infinito.</p></div>
+  </div>
+
+  <div class="quiz">
+    <h2>🎨 Mini reto: ¿cuánto aprendiste?</h2>
+    <p id="question">¿Qué ODS es el eje principal de esta aplicación?</p>
+    <div class="answers">
+      <button class="answer" onclick="answerQuiz(this,false)">ODS 2 · Hambre cero</button>
+      <button class="answer" onclick="answerQuiz(this,true)">ODS 5 · Igualdad de género</button>
+      <button class="answer" onclick="answerQuiz(this,false)">ODS 7 · Energía asequible</button>
+      <button class="answer" onclick="answerQuiz(this,false)">ODS 14 · Vida submarina</button>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="reflection" id="reflection" hidden>
+      <h3>🌷 Una reflexión para ti</h3>
+      <p id="reflectionText"></p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="proyecto">
+  <div class="about">
+    <div class="panel">
+      <h2 class="section-title">¿Qué busca esta aplicación?</h2>
+      <p>“Mujeres en la Historia del Arte” propone utilizar las artes plásticas como herramienta educativa para hacer visibles las contribuciones de las mujeres y abrir una conversación sobre quiénes aparecen —y quiénes quedan fuera— de los relatos históricos.</p>
+      <ul>
+        <li>Visibilizar artistas y sus aportaciones.</li>
+        <li>Relacionar arte, educación e igualdad de género.</li>
+        <li>Cuestionar estereotipos sobre quién puede ser artista.</li>
+        <li>Facilitar una experiencia de aprendizaje interactiva.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2 class="section-title">Indicadores del proyecto</h2>
+      <p>La app puede medir su impacto educativo con indicadores sencillos:</p>
+      <div class="stat"><div><span id="shown">25</span> artistas</div><div>11 movimientos</div><div>4 ODS relacionados</div></div>
+      <p style="margin-top:18px;color:var(--muted)">Idea de evaluación: comparar el conocimiento de los estudiantes antes y después de utilizar la aplicación.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<section class="container art-lab" id="laboratorio" aria-labelledby="lab-title">
+  <div class="lab-heading">
+    <span class="kicker lab-kicker">Laboratorio creativo</span>
+    <h2 class="section-title" id="lab-title">Un jardín de arte generativo</h2>
+    <p class="section-sub">Un pequeño sistema de partículas inspirado en nenúfares y movimiento orgánico. Cada variación crea una composición distinta con azar controlado y ruido Perlin.</p>
+  </div>
+  <div class="lab-controls">
+    <button class="btn primary" id="randomizeArt" type="button">✦ Crear variación aleatoria</button>
+    <button class="btn secondary" id="toggleMotion" type="button" aria-pressed="false">Pausar movimiento</button>
+    <span id="artStatus" class="art-status" aria-live="polite">La obra está en movimiento.</span>
+  </div>
+  <div id="generativeCanvas" class="generative-canvas" aria-label="Animación generativa de partículas orgánicas"></div>
+  <p class="lab-note">Consejo: en móviles la animación reduce automáticamente su densidad para mantener una experiencia fluida. Puedes pausarla en cualquier momento.</p>
+</section>
+
+<section class="container references" id="referencias">
+  <h2 class="section-title">Referencias y recursos</h2>
+  <p class="section-sub">Fuentes para ampliar la información sobre igualdad de género, historia del arte y las técnicas de programación creativa utilizadas en esta aplicación.</p>
+  <div class="reference-grid">
+    <article class="reference-card"><span class="reference-type">Agenda 2030</span><h3>ONU — Objetivo de Desarrollo Sostenible 5</h3><p>Metas globales para lograr la igualdad de género y empoderar a mujeres y niñas.</p><a href="https://www.un.org/sustainabledevelopment/gender-equality/" target="_blank" rel="noopener noreferrer">Consultar recurso oficial ↗</a></article>
+    <article class="reference-card"><span class="reference-type">Historia del arte</span><h3>National Museum of Women in the Arts</h3><p>Museo y recursos dedicados a reconocer a las mujeres en las artes visuales.</p><a href="https://nmwa.org/" target="_blank" rel="noopener noreferrer">Explorar el museo ↗</a></article>
+    <article class="reference-card"><span class="reference-type">Colecciones</span><h3>Tate — Artistas</h3><p>Biografías, movimientos artísticos y obras de artistas de distintas épocas.</p><a href="https://www.tate.org.uk/art/artists" target="_blank" rel="noopener noreferrer">Consultar artistas ↗</a></article>
+    <article class="reference-card"><span class="reference-type">Programación creativa</span><h3>p5.js — random()</h3><p>Documentación de la función para elegir valores o elementos aleatorios.</p><a href="https://p5js.org/reference/p5/random/" target="_blank" rel="noopener noreferrer">Leer documentación ↗</a></article>
+    <article class="reference-card"><span class="reference-type">Algoritmos orgánicos</span><h3>p5.js — noise()</h3><p>Documentación del ruido Perlin para generar cambios suaves, texturas y movimiento orgánico.</p><a href="https://p5js.org/es/reference/p5/noise/" target="_blank" rel="noopener noreferrer">Leer documentación ↗</a></article>
+    <article class="reference-card"><span class="reference-type">Sistemas naturales</span><h3>The Nature of Code — Daniel Shiffman</h3><p>Libro abierto sobre simulación, fuerzas, sistemas de partículas y comportamientos inspirados en la naturaleza.</p><a href="https://natureofcode.com/" target="_blank" rel="noopener noreferrer">Leer el libro abierto ↗</a></article>
+  </div>
+  <p class="reference-note">Nota académica: las biografías de la galería son síntesis educativas. Para trabajos escolares, verifica fechas, títulos de obras y atribuciones en catálogos de museos o fuentes institucionales.</p>
+</section>
+
+<footer>
+  <div class="foot">
+    <p><strong>Mujeres en la Historia del Arte</strong> · Proyecto educativo inspirado en la Agenda 2030.</p>
+    <p>ODS 5 · Igualdad de género</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()" aria-label="Cerrar">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
